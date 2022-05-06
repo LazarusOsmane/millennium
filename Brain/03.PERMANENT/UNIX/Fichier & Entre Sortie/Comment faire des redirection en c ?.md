@@ -10,18 +10,15 @@
 > DATE DM             : 18/04/2022
 
 
-## Concept 
-L'appel système **dup2** duplique un descripteur de fichier ouvert,
-vous permettant de spécifier le descripteur de fichier que vous
-ouhaitez.
+## dup2 va rediriger un descripteur de fichier vers un autre descripteur de fichier.
 
 *FORMAT :*
 
 ````
-       **#include <unistd.h>**
+       #include <unistd.h>
 
-       **int dup(int** _oldfd_**);**
-       **int dup2(int** _oldfd_**, int** _newfd_**);**
+       int dup(int _oldfd_**);
+       int dup2(int _oldfd_, int _newfd_);
 ````
 
 *EXAMPLE :*
@@ -59,43 +56,36 @@ hello
 ![[Screenshot from 2022-04-23 09-38-17.png]]
 ![[Screenshot from 2022-04-23 09-38-36.png]]
 
-## Concept 
+## dup va dupliquer un descripteur de fichier
 *FORMAT :*
 
 ````
+#include <unistd.h>
 
+ int dup(int oldfd);
 ````
 
 *EXAMPLE :*
 
 ````
+int	duplique_fd(void)
+{
+	int copy_fd;
 
+	fd = open("file.txt", 0_RDONLY);
+	if (!fd)
+		return (0);
+	copy_fd = dup(fd);
+	printf("fd = %d copy = %d\n", fd, copy_fd);
+}
 ````
 
 *OUTPUT :*
 
 ````
-
+>$ gcc prog.c && ./a.out
+fd = 3 copy = 3
 ````
 
 *RESOURCCE :*
-## Concept 
-*FORMAT :*
-
-````
-
-````
-
-*EXAMPLE :*
-
-````
-
-````
-
-*OUTPUT :*
-
-````
-
-````
-
-*RESOURCCE :*
+![[Screenshot from 2022-05-06 19-42-34.png]]
