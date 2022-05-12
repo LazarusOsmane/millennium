@@ -6,7 +6,7 @@
 /*   By: engooh <engooh@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 14:17:07 by engooh            #+#    #+#             */
-/*   Updated: 2022/05/12 16:10:18 by engooh           ###   ########.fr       */
+/*   Updated: 2022/05/12 13:49:04 by engooh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,19 +20,18 @@
 # include <sys/time.h>
 # include "../share/libft/libft.h"
 
+struct	s_all;
+
 typedef struct s_philosopher
 {
+	pthread_mutex_t		mtxid;
 	pthread_t			thrid;
-	pthread_mutex_t		eat;
-	pthread_mutex_t		did;
-	pthread_mutex_t		slp;
-	pthread_mutex_t		thk;
 	int					nbp;
 	long int			ttd;
 	long int			tte;
 	long int			tts;
 	long int			ttk;
-	void				*all;
+	t_all				*all;
 }	t_philosopher;
 
 typedef struct s_all

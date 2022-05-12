@@ -6,37 +6,43 @@
 /*   By: engooh <engooh@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 14:16:49 by engooh            #+#    #+#             */
-/*   Updated: 2022/05/11 18:54:26 by engooh           ###   ########.fr       */
+/*   Updated: 2022/05/12 16:44:05 by engooh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include    "../inc/philo.h"
 
-void	start_eat(t_philosopher *all)
+void	status_of_philosophers(t_philosopher *p, t_all *a)
 {
-		if (all->time_to_die - time)	
-		printf("timestamp_in_ms X is eating", timestamp(), all->idx);
+	if (!pthread_mutex_lock(&p->eat))
+	{
+		p->tte = timestamp() - a->genese;
+		printf("%ld %d has taken a fork\n", p->tte, p->nbp);
+		printf("%ld %d is eating\n", p->tte, p->nbp);
+		usleep(a->tte * 1000);
+		pthread_mutex_unlock(&p->eat);
+	}
 }
 
 void	*routine(void *argc)
 {
-	t_philosopher	*all;
+	t_philosopher	*philo;
 
-	all = argc;
-	else
-		start_eat(all);
+	philo = argc;
+	pthread_mutex_lock(&philo->eat);
+	printf("start time %ld nbr philo %d\n", timestamp() - ((t_all *)philo->all)->genese, philo->nbp);
+	pthread_mutex_lock(&philo->eat);
 	return (NULL);
 }
 
 int	main(int ac, char **av)
 {
-	int		i;
-	t_all	all;
+	t_all	*all;
 
-	(void)ac;
-	init_philo(&all, -1, av[1], av[2]);
-	i = -1;
-	while (++i < all.nbr_philo)
-		printf("tread id %ld \n", all.philo[i].thrid);
+	if (ac < 5)
+		return (1);
+	all = init_philo(av[1], av[2], av[3], av[4]);
+	run_philo(all);
+	free_philo(all, 1, 0);
 	return (0);
 }

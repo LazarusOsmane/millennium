@@ -1,4 +1,4 @@
-SRC = src/main.c src/utils.c
+SRC = src/main.c src/utils.c src/utils2.c src/utils3.c
 OBJ = ${SRC:%.c=%.o}
 CFLAG = -g3 -pthread -Wall -Wextra -Werror
 
