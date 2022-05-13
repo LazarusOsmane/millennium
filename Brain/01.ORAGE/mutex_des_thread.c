@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   thread.c                                           :+:      :+:    :+:   */
+/*   mutex_des_thread.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: engooh <engooh@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 09:25:52 by engooh            #+#    #+#             */
-/*   Updated: 2022/05/10 11:11:14 by engooh           ###   ########.fr       */
+/*   Updated: 2022/05/10 12:45:14 by engooh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 
 void	*start_routine(void *ac)
 {
-	int		i;
+	int	i;
 
 	i = 0;
 	while (++i < 5)
@@ -30,10 +30,17 @@ void	*start_routine(void *ac)
 
 int	main(void)
 {
-	int			i;
-	void		*status;
+	int		i;
+	pthread_t	mut;
+	pthread_t	attr;	
 	pthread_t	thid[5];
+	void		*status;
 
+	if (pthread_mutexattr_init(&attr) == -1)
+	{
+		perror("mutexattr_init error");
+		exit(1);
+	}
 	i = -1;
 	while (++i < 2)
 	{

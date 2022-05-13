@@ -5,7 +5,7 @@
 > MOC                    : [[Unix]]
 > LIEN                     : [[FICHIER  & ENTRER SORTIE]]
 > TYPE DE NOTE   : Note permanante 
->  RESOURCE        :  https://cs61.seas.harvard.edu/wiki/images/0/0b/Lec22-Files.pdf
+>  RESOURCE        :  https://cs61.seas.harvard.edu/wiki/images/0/0b/Lec22-Files.pdf http://monge.univ-mlv.fr/~dr/NCSPDF/chapitre16.pdf
 > DATE PM             : 18/04/2022
 > DATE DM             : 18/04/2022
 
@@ -37,6 +37,25 @@ Mais il ya des chose que le peut pas partage comme l'espace d'adressage, la stac
 - - Linux TCB (task_struct) a 106 champs
 - 
 *RESOURCCE :*
+
+## Les thread partage quasiment tout entre eux ! 
+
+Un processus est compose des parties suivantes: 
+ - du code
+ - des donnees 
+ - une pile 
+ - des descripteurs de fichiers
+ - des tables de signaux. 
+
+Du point de vue du noyau, transferer l’execution a un autre processus revient a rediriger les bons pointeurs et recharger les registres du processeur de la pile.
+
+Les divers threads d’un meme processus peuvent partager certaines parties: 
+ - le code
+ - les donnees
+ - les descripteurs de fichiers
+ - les tables de signaux. En fait
+
+ils ont au minimum leur propre pile, et partagent le reste, donc il partage la heap.
 
 ## Concept 
 *FORMAT :*

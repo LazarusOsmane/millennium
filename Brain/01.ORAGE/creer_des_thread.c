@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   thread.c                                           :+:      :+:    :+:   */
+/*   creer_des_thread.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: engooh <engooh@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 09:25:52 by engooh            #+#    #+#             */
-/*   Updated: 2022/05/10 11:11:14 by engooh           ###   ########.fr       */
+/*   Updated: 2022/05/10 10:45:16 by engooh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,12 @@ int	main(void)
 {
 	int			i;
 	void		*status;
+	/* status contient un pointeur vers l' argument status passé par le thread de fin dans le cadre de pthread_exit(). 
+	Si le thread de fin s'est terminé par un retour, status contient un pointeur vers la valeur de retour. 
+	Si le thread a été annulé, le statut peut être défini sur -1.*/
 	pthread_t	thid[5];
-
+	/* pthread_t est le type de données (long unsigned int) utilisé pour identifier de manière unique un thread. 
+	Il est renvoyé par pthread_create() et utilisé par l'application dans les appels de fonction qui nécessitent un identifiant de thread.*/
 	i = -1;
 	while (++i < 2)
 	{
@@ -52,7 +56,8 @@ int	main(void)
 			perror("");
 			exit(3);
 		}
+		/*Permet au thread appelant d'attendre la fin du thread cible .*/
 		printf("Thread %d return %s\n", i, (char *)status);
-		free(status);
 	}
+	free(status);
 }
