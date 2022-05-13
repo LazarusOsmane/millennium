@@ -585,3 +585,7 @@ Operation not possible due to RF-kill
 133
 
 Memory page has hardware error
+
+139
+
+segmentation fault

@@ -2,13 +2,12 @@
 
 ## METADATA
 > [!INFO]
-> MOC                    :
-> LIEN                     : 
-> TYPE DE NOTE   :
->  REFERENCE       : 
+> MOC                    : [[Unix]]
+> LIEN                     :  [[PROCESSUS]] [[PROGRAMATION DE PROCESSUS SUR UNIX]] [[Unix Systeme]] 
+> TYPE DE NOTE   : Note permanente
 >  RESOURCE        : https://man7.org/linux/man-pages/man3/atexit.3.html https://man7.org/linux/man-pages/man3/exit.3.html
-> DATE PM             : JJ/MM/YYYY
-> DATE DM             : JJ/MM/YYYY
+> DATE PM             : 07/05/2022
+> DATE DM             : 07/05/2022
 
 
 ## Un processus se termine pour l'une des 3 raisons suivantes :
@@ -50,31 +49,3 @@ void fork6()
 }
 
 ````
-
-*OUTPUT :*
-
-````
-
-````
-
-*RESOURCCE :*
-## Concept 
-*FORMAT :*
-
-````
-
-````
-
-*EXAMPLE :*
-
-````
-
-````
-
-*OUTPUT :*
-
-````
-
-````
-
-*RESOURCCE :*
