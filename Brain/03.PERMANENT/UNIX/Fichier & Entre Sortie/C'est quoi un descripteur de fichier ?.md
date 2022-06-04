@@ -2,8 +2,35 @@
 
 ## METADATA
 > [!INFO]
-> MOC                    : [[Unix]]
-> LIEN                     : [[FICHIER  & ENTRER SORTIE]]
+> MOC                    : [[MOC_INFORMATIQUE]]
+> LIEN                     : 
+ [[Unix]]
+ 
+ [[FICHIER  & ENTRER SORTIE]] 
+
+ [[C'est quoi L'abstraction de fichier UNIX]]
+
+ [[C'est quoi un descripteur de fichier ?]]
+
+ [[C'est quoi un Système de fichiers virtuel]]
+
+ [[Comment Accès aux métadonnées des fichiers ?]]
+
+ [[Comment ecrire sur un fichier ?]]
+
+ [[Comment faire des operation sur les fichier sur Unix ?]]
+
+ [[Comment faire des redirection en c ?]]
+
+ [[Comment lire dans un fichier ?]]
+
+ [[Comment manipuler des repertoire ?]]
+
+ [[PROGRAMTION DES FICHIERS & ENTRER SORTIE]]
+
+ [[stdin, stdout, stderr]]
+
+ [[THEORIE DES FICHIERS &  ENTRER SORTIE]]
 > TYPE DE NOTE   : Note permanante 
 >  RESOURCE        :  https://cs61.seas.harvard.edu/wiki/images/0/0b/Lec22-Files.pdf https://www.notion.so/LANGUAGE-C-b31898999f8f4c5ba0570ba3ac75240e?p=b4bf12ef137346de97996823138ccfc8
 > DATE PM             : 18/04/2022
@@ -26,14 +53,11 @@
 *RESOURCCE :*
 ![[offset_file 3.png]]
 
-## L'OS maintient un table de fd pour chaque processus
-- Plusieur processus peuvent avoir le même fichier ouvert.
-- un processus peut ouvrire plusieur fois un meme fichier chaque instance chaque fd du fichier ouvert aurat sa propre position.
+## L'OS maintient un table de fd pour chaque processes
+- Plusieur processes peuvent avoir le même fichier ouvert.
+- un processes peut ouvrire plusieur fois un meme fichier chaque instance chaque fd du fichier ouvert aurat sa propre position.
 - Il peut lire et écrire à différents décalages dans le fichier indépendamment.
 - mais ils auront des tables de fd et des entrées de table de fichiers différentes.
 
 *RESOURCCE :*
-![[fileinstance.png]]
-
-## Plus D'info sur les fd sur la page notion 
-https://www.notion.so/LANGUAGE-C-b31898999f8f4c5ba0570ba3ac75240e?p=b4bf12ef137346de97996823138ccfc8
+![[fileinstance 1.png]]

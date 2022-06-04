@@ -2,8 +2,47 @@
 
 ## METADATA
 > [!INFO]
-> MOC                    : [[PROGRAMATION DE PROCESSUS SUR UNIX]] [[Unix]]
+> MOC                    : [[MOC_INFORMATIQUE]]
 > LIEN                     : 
+ [[Unix]] 
+
+ [[PROCESSUS SUR UNIX]]
+
+ [[C'est quoi l'etat de sortie d'un processus]]
+
+ [[C'est quoi l'États d'un processus ?]]
+
+ [[C'est quoi la creation de processus ?]]
+
+ [[C'est quoi un processus ?]]
+
+ [[C'est quoi un Systeme Multi-tache ou Multi-processus]]
+
+ [[Comment bien securiser la comunication entre les processus ?]]
+
+ [[Comment creer un nouveaux process ?]]
+
+ [[Comment excuter un nouveaux programme (script shell cmd) ?]]
+
+ [[Comment faire communiquer plusieur processus entre eux ?]]
+
+ [[Comment Obtenir l'état de sortie d'un processus enfant ?]]
+
+ [[Comment obtenir le pid d'un processus ?]]
+
+ [[Comment recupper des information sur les processus ?]]
+
+ [[Comment terminer un processus ?]]
+
+ [[Comment verifier l'etats d'un processes ?]]
+
+ [[PROCESSUS DANS LE SHELL]]
+
+ [[PROCESSUS SUR UNIX]]
+
+ [[PROGRAMATION DE PROCESSUS SUR UNIX]]
+
+ [[THEORIE DES PROCESSUS]]
 > TYPE DE NOTE   : Note permanente
 >  RESOURCE        : https://stackoverflow.com/questions/27306764/capturing-exit-status-code-of-child-process https://www.ibm.com/docs/en/ztpf/1.1.0.15?topic=apis-wexitstatusobtain-exit-status-child-process#cpp_wexitstatus https://www.ibm.com/docs/en/ztpf/1.1.0.15?topic=zca-wifexitedquery-status-see-if-child-process-ended-normally#cpp_wifexited https://www.geeksforgeeks.org/exit-status-child-process-linux/
 > DATE PM             : 15/04/2022
@@ -28,8 +67,7 @@ int WIFEXITED(int status);
 ## WEXITSTATUS Obtient l'état de sortie d'un processus enfant
 *DESCRIPTION :* 
 
-Si la macro WIFEXITED indique que le processus enfant s'est terminé normalement, la macro WEXITSTATUS renvoie le code de sortie spécifié par le processus enfant. Sinon
-la valeur renvoyée n'a pas de sens.
+Si la macro WIFEXITED indique que le processus enfant s'est terminé normalement, la macro WEXITSTATUS renvoie le code de sortie spécifié par le processus enfant. Sinon la valeur renvoyée n'a pas de sens.
  
 *FORMAT :*
 

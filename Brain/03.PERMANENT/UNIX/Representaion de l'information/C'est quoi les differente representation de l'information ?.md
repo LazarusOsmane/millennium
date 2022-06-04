@@ -2,8 +2,23 @@
 
 ## METADATA
 > [!INFO]
-> MOC                    : [[Unix]]
-> LIEN                     : [[Unix]] [[Unix Systeme]] [[Representaion de l'information]]
+> MOC                    : [[MOC_INFORMATIQUE]]
+> LIEN                     : 
+ Representaion _de_l'information1
+
+ [[Unix]]
+ 
+ [[C'est quoi la representation de l'information]]
+
+ [[C'est quoi les differente representation de l'information ?]]
+
+ [[C'est quoi une instruction, le language machine et l'assembleur]]
+
+ [[Comment est representer la memoire ?]]
+
+ [[Comment representer un entier ?]]
+
+ [[REPRESENTATION DE L'INFORMATION]]
 > TYPE DE NOTE   : Note permanante 
 >  RESOURCE        :  https://cs61.seas.harvard.edu/wiki/images/0/0b/Lec22-Files.pdf
 > DATE PM             : 18/04/2022

@@ -2,8 +2,47 @@
 
 ## METADATA
 > [!INFO]
-> MOC                    : [[PROCESSUS SUR UNIX]] [[Unix]] [[THEORIE DES PROCESSUS]]
-> LIEN                     : [[C'est quoi un processus ?]] [[Comment verifier l'etats d'un processes ?]]
+> MOC                    : [[MOC_INFORMATIQUE]]
+> LIEN                     : 
+ [[Unix]] 
+ 
+  [[PROCESSUS SUR UNIX]]
+
+ [[C'est quoi l'etat de sortie d'un processus]]
+
+ [[C'est quoi l'États d'un processus ?]]
+
+ [[C'est quoi la creation de processus ?]]
+
+ [[C'est quoi un processus ?]]
+
+ [[C'est quoi un Systeme Multi-tache ou Multi-processus]]
+
+ [[Comment bien securiser la comunication entre les processus ?]]
+
+ [[Comment creer un nouveaux process ?]]
+
+ [[Comment excuter un nouveaux programme (script shell cmd) ?]]
+
+ [[Comment faire communiquer plusieur processus entre eux ?]]
+
+ [[Comment Obtenir l'état de sortie d'un processus enfant ?]]
+
+ [[Comment obtenir le pid d'un processus ?]]
+
+ [[Comment recupper des information sur les processus ?]]
+
+ [[Comment terminer un processus ?]]
+
+ [[Comment verifier l'etats d'un processes ?]]
+
+ [[PROCESSUS DANS LE SHELL]]
+
+ [[PROCESSUS SUR UNIX]]
+
+ [[PROGRAMATION DE PROCESSUS SUR UNIX]]
+
+ [[THEORIE DES PROCESSUS]]
 > TYPE DE NOTE   : Note permanente
 >  RESOURCE        : https://www.baeldung.com/linux/process-states https://cs61.seas.harvard.edu/wiki/images/7/7b/Lec21-Processes.pdf
 > DATE PM             : 16/04/2022
@@ -35,4 +74,4 @@ Dans cet état, nous pourrions ramener le processus dans un état en cours d'ex�
 Lorsqu'un processus a terminé son exécution ou est terminé, il enverra le signal _SIGCHLD_  au processus parent et passera à l'état zombie. Le processus zombie, également connu sous le nom de processus défunt, restera dans cet état jusqu'à ce que le processus parent le supprime de la table des processus. Pour effacer le processus enfant terminé de la table des processus, le processus parent doit lire la valeur de sortie du processus enfant à l'aide des appels système wait ou pid.
 
 *RESOURCCE :*
-![[image1.png]]
+![[image1 1.png]]

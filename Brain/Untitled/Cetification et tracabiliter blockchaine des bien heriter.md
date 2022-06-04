@@ -1,9 +1,9 @@
-# TITRE 
+# Cetification et tracabiliter blockchaine des bien heriter
 
 ## METADATA
 > [!INFO]
-> MOC                    :
-> LIEN                     : 
+> MOC                    : [[MOC_LE_MILLIARD_OU_RIEN]]
+> LIEN                     : [[Certification de document juridique avec l'aide de la blockchaine .]]
 > TYPE DE NOTE   :
 >  REFERENCE       : 
 >  RESOURCE        :

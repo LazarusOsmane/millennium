@@ -12,13 +12,13 @@
 
 ## Terminator est un terminal virtuel qui a la particularité de permettre de partager la fenêtre selon vos envies et ainsi organiser plus simplement vos différentes fenêtres.
 
-![[Screenshot from 2022-04-16 22-54-49.png]]
+![[Screenshot from 2022-04-16 22-54-49 1.png]]
 
-![[Screenshot from 2022-04-16 22-55-16.png]]
+![[Screenshot from 2022-04-16 22-55-16 1.png]]
 
-![[Screenshot from 2022-04-16 22-55-28.png]]
+![[Screenshot from 2022-04-16 22-55-28 1.png]]
 
-![[Screenshot from 2022-04-16 22-55-49.png]]
+![[Screenshot from 2022-04-16 22-55-49 1.png]]
 
-![[Screenshot from 2022-04-16 22-56-14.png]]
+![[Screenshot from 2022-04-16 22-56-14 1.png]]
 
